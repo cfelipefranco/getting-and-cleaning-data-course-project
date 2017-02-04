@@ -1,7 +1,7 @@
 # run_analysis.R
 
 ## Script details
-### run_analysis is a function that takes no parameters and returns a data set containing the average
+#### run_analysis is a function that takes no parameters and returns a data set containing the average
 ### values for mean and std values on the original data set.
 
 ### Firstly, run_analysis will verify if the Samsung Data Set is in the working directory.
@@ -14,7 +14,11 @@
 ### variable for each activity and each subject.
 
 ## Considerations regarding a tidy data set
-### In order to achieve a tidy data set, the following were considered:
+### In order to achieve a tidy data set, the following points were considered:
+### 1. Each variable measured should be in one column
+### 2. Each different observation of that varibale should be in a row
+### 3. There should be one table for every kind of variable
+### 4. A key column should be set to link multiple tables
 
 ## Columns selected and its names
 ### Data considered to be relevant for the final data set includes all mean and standard deviation columns.
@@ -37,5 +41,3 @@
 ### Script will write the output file resultingMeansSet.txt containing the final data set.
 ### You can easily assign it back to a variable in R by executing the table read as follows: 
 ### read.table("resultingMeansSet.txt",header = T)
-
-
