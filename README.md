@@ -1,4 +1,18 @@
-## run_analysis.R
+### Introduction and Files
+#### This repository was uploaded to present pertinent files for the "Getting and Cleaning Data Course 
+#### Project" as part of the peer-reviewed assessment of the Getting and Cleaning Data course from
+#### Johns Hopkins University on Coursera for the Data Science specialization. 
+#### Files and Folders in the repository includes:
+#### 1. UCI HAR Dataset (folder) with the original files of the data set manipulated by this project
+#### 2. CodeBook.md file describing the variables from the resutingMeansSet
+#### 3. This README.md file with important observations of the repository, as well as the project
+#### 4. resultingMeansSet.txt file containing the resulting data set from the execution of run_analysis
+#### 5. run_analysis.R file containing run_analysis scripted function to transform original data into
+#### the final set.
+#### Full original data set can be downloaded here:
+#### https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+#### Further information on the original data set and its observations can be garned here:
+#### http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 ### Script details
 #### run_analysis is a function that takes no parameters and returns a data set containing the average
