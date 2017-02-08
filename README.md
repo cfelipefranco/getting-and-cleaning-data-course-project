@@ -49,7 +49,6 @@
 #### contemplated in this data set includes:
 #### 1. Every individual subject to the study (from 1 to 30)
 #### 2. Every individual activity (laying, sitting, standing, walking, walking downstairs and upstairs)
-#### 3. Each type of measurement (test or train)
 
 ### Output file and how to read it back into R
 #### Script will write the output file resultingMeansSet.txt containing the final data set.
