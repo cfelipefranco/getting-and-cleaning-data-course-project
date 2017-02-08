@@ -24,7 +24,9 @@
 #### importante elements: an indication of mean or std that tells if the variable is measuring the
 #### mean or standard deviation of its purpose and the axis "x", "y" or "z" (if applicable). 
 #### Without further ado, columns names, everybody:
-#### label: indicates to which group the averages of means and stds presented in the row refers to
+#### activity: indicates the sort of activity (laying, sitting, standing, walking, walking upstairs or 
+#### walking downstairs) during the measurements
+#### subject: indicates to which subject the averages refer
 #### tbodyaccmeanx
 #### tbodyaccmeany
 #### tbodyaccmeanz
