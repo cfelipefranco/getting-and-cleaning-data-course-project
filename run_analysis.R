@@ -46,14 +46,9 @@ run_analysis <- function(){
   
   # Complete task 5 by creating an independent data set with averages of each variable for
   # each activity and each subject
-  meansByActivity <- aggregate(activityNamedSet[,1:66],list(activityNamedSet$activity),mean)
-  meansBySubject <- aggregate(activityNamedSet[,1:66],list(activityNamedSet$subject),mean)
-  meansByType <- aggregate(activityNamedSet[,1:66],list(activityNamedSet$type),mean)
-  resultingMeansSet <- rbind(meansBySubject,meansByActivity, meansByType)
-  resultingMeansSet <- rename(resultingMeansSet, label=Group.1)
-  rowLabels <- c(paste("Subject", grep("[0-9]",resultingMeansSet$label), sep = " "), 
-                 resultingMeansSet$label[31:36], "Test", "Train")
-  resultingMeansSet <- mutate(resultingMeansSet, label=rowLabels)
+  resultingMeansSet <- aggregate(activityNamedSet[,1:66],list(activityNamedSet$activity
+                                                              , activityNamedSet$subject),mean)
+  resultingMeansSet <- rename(resultingMeansSet, activity=Group.1, subject=Group.2)
   
   # Write output file containing resulting data set (content will be available both in 
   # resultingMeansSet.txt file and run_analysis function return)
@@ -74,10 +69,6 @@ run_analysis <- function(){
   remove("activities")
   remove("activityNamedSet")
   remove("colLabels")
-  remove("meansByActivity")
-  remove("meansBySubject")
-  remove("meansByType")
-  remove("rowLabels")
   
   # Return resulting set
   resultingMeansSet
